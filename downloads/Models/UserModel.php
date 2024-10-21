@@ -6,11 +6,11 @@ use CodeIgniter\Model;
 
 class UserModel extends Model {
     
-	protected $table = 'smart_intake_evidence';
+	protected $table = 'volunteer_hours';
 	protected $primaryKey = 'id';
 	protected $returnType = 'object';
 	protected $useSoftDeletes = false;
-	protected $allowedFields = ['smart_intake_id', 'name', 'file', 'created_by', 'updated_by', 'deleted_by', 'created_at', 'updated_at', 'deleted_at'];
+	protected $allowedFields = ['student_id', 'date', 'month', 'year', 'frequency', 'minute', 'activity', 'detail', 'academic_year', 'semester', 'created_at', 'updated_at', 'deleted_at'];
 	protected $useTimestamps = false;
 	protected $createdField  = 'created_at';
 	protected $updatedField  = 'updated_at';

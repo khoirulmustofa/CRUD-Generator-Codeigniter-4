@@ -745,12 +745,16 @@
                 <thead>
                 <tr>
 					<th>Id</th>
-					<th>Smart Intake Id</th>
-					<th>Name</th>
-					<th>File</th>
-					<th>Created By</th>
-					<th>Updated By</th>
-					<th>Deleted By</th>
+					<th>Student Id</th>
+					<th>Date</th>
+					<th>Month</th>
+					<th>Year</th>
+					<th>Frequency</th>
+					<th>Minute</th>
+					<th>Activity</th>
+					<th>Detail</th>
+					<th>Academic Year</th>
+					<th>Semester</th>
 					<th>Created At</th>
 					<th>Updated At</th>
 					<th>Deleted At</th>
@@ -783,47 +787,65 @@
 
 
 								<div class="form-group">
-									<label for="smart_intake_id">Smart Intake Id: </label>
-									<input type="number" value="<?= $smart_intake_id?>" id="smart_intake_id" name="smart_intake_id" class="form-control" placeholder="Smart Intake Id ..." number="true" >
+									<label for="student_id">Student Id: </label>
+									<input type="number" value="<?= $student_id?>" id="student_id" name="student_id" class="form-control" placeholder="Student Id ..." number="true" >
 								</div>
 								<div class="form-group">
-									<label for="name">Name: </label>
-									<textarea cols="40" rows="5" value="<?= $name?>" id="name" name="name" class="form-control" placeholder="Name ..." ></textarea>
+									<label for="date">Date: </label>
+									<input type="number" value="<?= $date?>" id="date" name="date" class="form-control" placeholder="Date ..." number="true" >
 								</div>
 								<div class="form-group">
-									<label for="file">File: </label>
-									<textarea cols="40" rows="5" value="<?= $file?>" id="file" name="file" class="form-control" placeholder="File ..." ></textarea>
+									<label for="month">Month: </label>
+									<input type="number" value="<?= $month?>" id="month" name="month" class="form-control" placeholder="Month ..." number="true" >
 								</div>
 
 
 								<div class="form-group">
-									<label for="created_by">Created By: </label>
-									<input type="text" value="<?= $created_by?>" id="created_by" name="created_by" class="form-control" placeholder="Created By ..." >
+									<label for="year">Year: </label>
+									<input type="number" value="<?= $year?>" id="year" name="year" class="form-control" placeholder="Year ..." number="true" >
 								</div>
 								<div class="form-group">
-									<label for="updated_by">Updated By: </label>
-									<input type="text" value="<?= $updated_by?>" id="updated_by" name="updated_by" class="form-control" placeholder="Updated By ..." >
+									<label for="frequency">Frequency: </label>
+									<input type="number" value="<?= $frequency?>" id="frequency" name="frequency" class="form-control" placeholder="Frequency ..." number="true" >
 								</div>
 								<div class="form-group">
-									<label for="deleted_by">Deleted By: </label>
-									<input type="text" value="<?= $deleted_by?>" id="deleted_by" name="deleted_by" class="form-control" placeholder="Deleted By ..." >
+									<label for="minute">Minute: </label>
+									<input type="number" value="<?= $minute?>" id="minute" name="minute" class="form-control" placeholder="Minute ..." number="true" >
 								</div>
 
 
 								<div class="form-group">
-									<label for="created_at">Created At: <span class="text-danger">*</span> </label>
-									<input type="date" value="<?= $created_at?>" id="created_at" name="created_at" class="form-control" dateISO="true" required>
+									<label for="activity">Activity: </label>
+									<textarea cols="40" rows="5" value="<?= $activity?>" id="activity" name="activity" class="form-control" placeholder="Activity ..." ></textarea>
 								</div>
 								<div class="form-group">
-									<label for="updated_at">Updated At: <span class="text-danger">*</span> </label>
-									<input type="date" value="<?= $updated_at?>" id="updated_at" name="updated_at" class="form-control" dateISO="true" required>
+									<label for="detail">Detail: </label>
+									<textarea cols="40" rows="5" value="<?= $detail?>" id="detail" name="detail" class="form-control" placeholder="Detail ..." ></textarea>
 								</div>
+								<div class="form-group">
+									<label for="academic_year">Academic Year: </label>
+									<input type="number" value="<?= $academic_year?>" id="academic_year" name="academic_year" class="form-control" placeholder="Academic Year ..." number="true" >
+								</div>
+
+
+								<div class="form-group">
+									<label for="semester">Semester: </label>
+									<input type="number" value="<?= $semester?>" id="semester" name="semester" class="form-control" placeholder="Semester ..." number="true" >
+								</div>
+								<div class="form-group">
+									<label for="created_at">Created At: </label>
+									<input type="date" value="<?= $created_at?>" id="created_at" name="created_at" class="form-control" dateISO="true" >
+								</div>
+								<div class="form-group">
+									<label for="updated_at">Updated At: </label>
+									<input type="date" value="<?= $updated_at?>" id="updated_at" name="updated_at" class="form-control" dateISO="true" >
+								</div>
+
+
 								<div class="form-group">
 									<label for="deleted_at">Deleted At: </label>
 									<input type="date" value="<?= $deleted_at?>" id="deleted_at" name="deleted_at" class="form-control" dateISO="true" >
 								</div>
-
-
 
 																				
 						<div class="form-group text-center">
@@ -853,47 +875,65 @@
 
 
 								<div class="form-group">
-									<label for="smart_intake_id">Smart Intake Id: </label>
-									<input type="number" value="<?= $smart_intake_id?>" id="smart_intake_id" name="smart_intake_id" class="form-control" placeholder="Smart Intake Id ..." number="true" >
+									<label for="student_id">Student Id: </label>
+									<input type="number" value="<?= $student_id?>" id="student_id" name="student_id" class="form-control" placeholder="Student Id ..." number="true" >
 								</div>
 								<div class="form-group">
-									<label for="name">Name: </label>
-									<textarea cols="40" rows="5" value="<?= $name?>" id="name" name="name" class="form-control" placeholder="Name ..." ></textarea>
+									<label for="date">Date: </label>
+									<input type="number" value="<?= $date?>" id="date" name="date" class="form-control" placeholder="Date ..." number="true" >
 								</div>
 								<div class="form-group">
-									<label for="file">File: </label>
-									<textarea cols="40" rows="5" value="<?= $file?>" id="file" name="file" class="form-control" placeholder="File ..." ></textarea>
+									<label for="month">Month: </label>
+									<input type="number" value="<?= $month?>" id="month" name="month" class="form-control" placeholder="Month ..." number="true" >
 								</div>
 
 
 								<div class="form-group">
-									<label for="created_by">Created By: </label>
-									<input type="text" value="<?= $created_by?>" id="created_by" name="created_by" class="form-control" placeholder="Created By ..." >
+									<label for="year">Year: </label>
+									<input type="number" value="<?= $year?>" id="year" name="year" class="form-control" placeholder="Year ..." number="true" >
 								</div>
 								<div class="form-group">
-									<label for="updated_by">Updated By: </label>
-									<input type="text" value="<?= $updated_by?>" id="updated_by" name="updated_by" class="form-control" placeholder="Updated By ..." >
+									<label for="frequency">Frequency: </label>
+									<input type="number" value="<?= $frequency?>" id="frequency" name="frequency" class="form-control" placeholder="Frequency ..." number="true" >
 								</div>
 								<div class="form-group">
-									<label for="deleted_by">Deleted By: </label>
-									<input type="text" value="<?= $deleted_by?>" id="deleted_by" name="deleted_by" class="form-control" placeholder="Deleted By ..." >
+									<label for="minute">Minute: </label>
+									<input type="number" value="<?= $minute?>" id="minute" name="minute" class="form-control" placeholder="Minute ..." number="true" >
 								</div>
 
 
 								<div class="form-group">
-									<label for="created_at">Created At: <span class="text-danger">*</span> </label>
-									<input type="date" value="<?= $created_at?>" id="created_at" name="created_at" class="form-control" dateISO="true" required>
+									<label for="activity">Activity: </label>
+									<textarea cols="40" rows="5" value="<?= $activity?>" id="activity" name="activity" class="form-control" placeholder="Activity ..." ></textarea>
 								</div>
 								<div class="form-group">
-									<label for="updated_at">Updated At: <span class="text-danger">*</span> </label>
-									<input type="date" value="<?= $updated_at?>" id="updated_at" name="updated_at" class="form-control" dateISO="true" required>
+									<label for="detail">Detail: </label>
+									<textarea cols="40" rows="5" value="<?= $detail?>" id="detail" name="detail" class="form-control" placeholder="Detail ..." ></textarea>
 								</div>
+								<div class="form-group">
+									<label for="academic_year">Academic Year: </label>
+									<input type="number" value="<?= $academic_year?>" id="academic_year" name="academic_year" class="form-control" placeholder="Academic Year ..." number="true" >
+								</div>
+
+
+								<div class="form-group">
+									<label for="semester">Semester: </label>
+									<input type="number" value="<?= $semester?>" id="semester" name="semester" class="form-control" placeholder="Semester ..." number="true" >
+								</div>
+								<div class="form-group">
+									<label for="created_at">Created At: </label>
+									<input type="date" value="<?= $created_at?>" id="created_at" name="created_at" class="form-control" dateISO="true" >
+								</div>
+								<div class="form-group">
+									<label for="updated_at">Updated At: </label>
+									<input type="date" value="<?= $updated_at?>" id="updated_at" name="updated_at" class="form-control" dateISO="true" >
+								</div>
+
+
 								<div class="form-group">
 									<label for="deleted_at">Deleted At: </label>
 									<input type="date" value="<?= $deleted_at?>" id="deleted_at" name="deleted_at" class="form-control" dateISO="true" >
 								</div>
-
-
 
 											
 						<div class="form-group text-center">
@@ -1073,12 +1113,16 @@ function edit(id) {
 			$('#edit-modal').modal('show');	
 
 			$("#edit-form #id").val(response.id);
-			$("#edit-form #smart_intake_id").val(response.smart_intake_id);
-			$("#edit-form #name").val(response.name);
-			$("#edit-form #file").val(response.file);
-			$("#edit-form #created_by").val(response.created_by);
-			$("#edit-form #updated_by").val(response.updated_by);
-			$("#edit-form #deleted_by").val(response.deleted_by);
+			$("#edit-form #student_id").val(response.student_id);
+			$("#edit-form #date").val(response.date);
+			$("#edit-form #month").val(response.month);
+			$("#edit-form #year").val(response.year);
+			$("#edit-form #frequency").val(response.frequency);
+			$("#edit-form #minute").val(response.minute);
+			$("#edit-form #activity").val(response.activity);
+			$("#edit-form #detail").val(response.detail);
+			$("#edit-form #academic_year").val(response.academic_year);
+			$("#edit-form #semester").val(response.semester);
 			$("#edit-form #created_at").val(response.created_at);
 			$("#edit-form #updated_at").val(response.updated_at);
 			$("#edit-form #deleted_at").val(response.deleted_at);
